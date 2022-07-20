@@ -1,0 +1,29 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caderno Vermelho", 
+    "price": 20
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/5183f832-4970-4bf6-bd2c-424a9feeeaab
+
+###
+
+PUT http://localhost:4002/products/e8e5cce8-1f47-4d72-bd57-16ba47016a32
+content-type: application/json
+
+{
+    "name": "Caneta Preta", 
+    "price": 2.0
+}
+
+###
+
+DELETE http://localhost:4002/products/e8e5cce8-1f47-4d72-bd57-16ba47016a32
